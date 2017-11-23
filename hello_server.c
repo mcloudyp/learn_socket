@@ -7,7 +7,7 @@
 
 void error_handling(char *message);
 
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
 	int serv_sock;
 	int clnt_sock;
@@ -20,7 +20,7 @@ int main(int argc, char argv[])
 
 	if(argc!=2)
 	{
-		printf("Usage : s% <port>\n", argv[0]);
+		printf("Usage : %s <port>\n", argv[0]);
 		exit(1);
 	}
 
