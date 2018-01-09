@@ -7,7 +7,7 @@
 #include <pthread.h>
 
 #define BUF_SIZE 100
-#define MAX_CLNT 2
+#define MAX_CLNT 256
 
 void *handle_clnt(void *arg);
 void send_msg(char *msg, int len);
